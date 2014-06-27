@@ -9,7 +9,7 @@ module.exports = function middleware(opts) {
   if(!opts.entry) {
     throw new Error('You must specify browserify entry point! (`opts.entry`)');
   }
-  it(!opts.path) {
+  if(!opts.path) {
     throw new Error('You must specify `opts.path` to serve bundle!')
   }
   var b = browserify().add(es6ify.runtime);
