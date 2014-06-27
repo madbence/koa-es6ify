@@ -1,0 +1,27 @@
+{
+  "name": "koa-es6ify",
+  "version": "0.0.1",
+  "description": "ES6ify middleware for koa",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madbence/koa-es6ify"
+  },
+  "keywords": [
+    "es6",
+    "koa",
+    "browserify",
+    "es6ify",
+    "middleware"
+  ],
+  "author": "Bence Dányi <bence@danyi.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madbence/koa-es6ify/issues"
+  },
+  "homepage": "https://github.com/madbence/koa-es6ify",
+  "dependencies": {
+    "browserify": "^4.2.0",
+    "es6ify": "^1.2.0"
+  }
+}
