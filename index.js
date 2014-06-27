@@ -5,6 +5,7 @@ module.exports = function middleware(opts) {
   var opts = opts || {};
   opts.add = opts.add || [];
   opts.transform = opts.transform || [];
+  opts.options = opts.options || {};
   if(!opts.entry) {
     throw new Error('You must specify browserify entry point! (`opts.entry`)');
   }
@@ -26,9 +27,7 @@ module.exports = function middleware(opts) {
     if(this.url != opts.path) {
       return yield* next;
     }
-    this.body = b.bundle({
-      debug: true
-    });
+    this.body = b.bundle(opts.options);
     this.type = 'application/javascript'
   };
 };
