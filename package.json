@@ -1,6 +1,6 @@
 {
   "name": "koa-es6ify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ES6ify middleware for koa",
   "main": "index.js",
   "repository": {
